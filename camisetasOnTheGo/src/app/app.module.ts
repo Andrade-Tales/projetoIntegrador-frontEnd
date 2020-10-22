@@ -16,7 +16,6 @@ import { UpdateProdutoComponent } from './produto/update-produto/update-produto.
 import { DeleteCategoriaComponent } from './categoria/delete-categoria/delete-categoria.component';
 import { UpdateCategoriaComponent } from './categoria/update-categoria/update-categoria.component';
 import { DialogComponent } from './dialog/dialog.component';
-import { MenuLateralComponent } from './menu-lateral/menu-lateral.component';
 import { ProdutosComponent } from './produto/produtos.component';
 import { AdminComponent } from './admin/admin.component';
 import { PostCategoriaComponent } from './categoria/post-categoria/post-categoria.component';
@@ -52,7 +51,6 @@ import { PoliticaPrivacidadeComponent } from './footer/politicaprivacidade/polit
     ContatoComponent,
     LoginComponent,
     CadastroComponent,
-    MenuLateralComponent,
     ProdutosComponent,
     AdminComponent,
     PostCategoriaComponent,

@@ -12,21 +12,24 @@
             <br>
         </div>
 
-        <small> <a routerLink='/home'>Home</a> / Produtos</small>
-        <div class="row">
-            <!--div class="col-md-4" *ngFor="let item of listaProduto">
-                <div class="pb-5">
-                    <div class="card zoom" style="width: 18rem;">
-                        <img src="{{item.linkImagem}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">{{item.nome}}</h5>
-                            <p class="card-text">Instituição: {{item.instituicao}}</p>
-                            <a href="#" class="btn btn-success">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div-->
+        <small> <a routerLink='/home'>Home</a></small>
+        <div class="row mt-4">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action bg-secondary text-white">
+                    Produtos
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-secondary text-white">
+                    <a href="#" class="list-group-item list-group-item-action bg-secondary text-white">Dapibus ac
+                        facilisis in</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-secondary text-white">Morbi leo
+                        risus</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-secondary text-white">Porta ac
+                        consectetur ac</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-secondary text-white" tabindex="-1"
+                        aria-disabled="true">Vestibulum at eros</a>
+                </a>
+            </div>
+
             <div class="col-md-4 texto" *ngFor="let item of listaProduto | orderBy : key : reverse">
                 <mat-card class="example-card my-3 mx-2 zoom">
                     <a class="imagem" [routerLink]="['/produtos/item', item.id]">
@@ -45,17 +48,8 @@
                     </mat-card-actions>
                 </mat-card>
             </div>
-            <!--div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://i.imgur.com/znFvkSd.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div-->
+
         </div>
     </div>
+
 </main>
